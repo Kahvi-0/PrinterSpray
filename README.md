@@ -8,6 +8,17 @@ Discover potentual targets
 crackmapexec smb [subnet] -M spooler | grep "Spooler service enabled" | awk -F " " '{print$2}' > spooler.txt
 ```
 
+Have responder running
+
+```
+sudo responder -I [interface]
+```
+Also try with --lm
+
+```
+sudo responder -I [interface] --lm
+```
+
 Run against hosts that have the spooler service enabled
 
 ```
