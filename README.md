@@ -5,7 +5,7 @@ Wrapper of https://github.com/dirkjanm/krbrelayx/blob/master/printerbug.py to be
 Discover potentual targets
 
 ```
-crackmapexec smb [subnet] -M spooler | grep "Spooler service enabled" | awk -F " " '{print$2}' > spooler.txt
+crackmapexec smb [subnet] -u '' -p '' -M spooler | grep -a "Spooler service enabled" | awk -F " " '{print$2}' > spooler.txt
 ```
 
 Have responder running
