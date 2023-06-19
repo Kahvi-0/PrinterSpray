@@ -13,7 +13,7 @@ Have responder running
 ```
 sudo responder -I [interface]
 ```
-Also try with --lm
+Also try with --lm to discover hosts that are not patched to CVE-2019-1040
 
 ```
 sudo responder -I [interface] --lm
