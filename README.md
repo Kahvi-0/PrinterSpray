@@ -11,12 +11,12 @@ crackmapexec smb [subnet] -u '' -p '' -M spooler | grep -a "Spooler service enab
 Have responder running
 
 ```
-sudo responder -I [interface]
+sudo responder -I [interface] -Av
 ```
 Also try with --lm to discover hosts that are not patched to CVE-2019-1040
 
 ```
-sudo responder -I [interface] --lm
+sudo responder -I [interface] --lm -Av
 ```
 
 Run against hosts that have the spooler service enabled
